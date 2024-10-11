@@ -84,7 +84,7 @@ span {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
 }
 .service-name {
     font-size: 28px;
@@ -105,11 +105,30 @@ span {
     margin: 0;
 }
 .monthly-value {
-
     font-size: 20px;
     font-weight: 700;
 }
+.container-button-contracted {
+    display: none;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
 
+.service-item:hover .container-button-contracted {
+    display: flex;
+    justify-content: end;
+    height: 30px;
+}
+.button-contracted {
+    border: none;
+    background-color: red;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.service-item:hover .container-button-contracted {
+    opacity: 1;
+}
 @media (max-width: 600px) {
     .add-services-link {
         font-size: 16px;

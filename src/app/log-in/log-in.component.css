@@ -32,8 +32,10 @@ span {
 .login-info-container {
     display: flex;
     padding: 20px;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 200px;
+    justify-content: center;
+    gap: 100px;
     height: 100%;
 }
 
@@ -99,4 +101,38 @@ span {
     border-radius: 4px;
     background-color: #7eff75c2;
     margin-top: 10px;
+}
+@media (max-width: 600px) {
+    .login-info-title{
+        width: 300px;
+        font-size: 28px;
+    }
+    .login-info-description {
+        font-size: 22px;
+        width: 300px;
+        color: #ffffff;
+    }
+    .login-info-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height: 100%;
+    }
+    
+    .login-form-title {
+        font-size: 22px;
+    }
+    .login-form-description {
+        font-size: 12px;
+    }
+    .input-container input {
+        width: 200px;
+        height: 32px;
+        font-size: 16px;
+    }
+    .login-button {
+        width: 200px;
+        height: 30px;
+        font-size: 18px;
+    }
 }

@@ -12,7 +12,7 @@ import Swal from 'sweetalert2';
 export class ContractedServicesComponent {
   confirmDelete() {
     Swal.fire({
-      title: '¿Estás seguro?',
+      title: '¿Estás seguro que quieres eliminar el servicio?',
       text: '¡No podrás revertir esto!',
       icon: 'warning',
       showCancelButton: true,
